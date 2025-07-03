@@ -3,8 +3,10 @@ package com.edutech.pagos.dto;
 import java.time.LocalDate;
 import lombok.Data;
 
+import org.springframework.hateoas.RepresentationModel;
+
 @Data
-public class PagoDTO {
+public class PagoDTO extends RepresentationModel <PagoDTO> {
 
     private Integer idPago;
     private String formaPago;
